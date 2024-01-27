@@ -1,0 +1,6 @@
+matplotlib==3.8.2
+numpy==1.26.3
+pandas==2.1.4
+Requests==2.31.0
+yfinance==0.2.36
+xlrd==2.0.1
