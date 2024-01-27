@@ -398,8 +398,10 @@ if __name__ == '__main__':
 
         df_current = update_with_spy(df['Adjusted Close'])  # Update the most recent dates with SPY data
         
-        os.makedirs('data', exist_ok=True)  
-        df_current.to_csv('data/adjusted_close_data.csv')
-        df.to_csv('data/full_data.csv')
+        os.makedirs('../data', exist_ok=True)  
+        df_current.to_csv('../data/adjusted_close_data.csv')
+        df.to_csv('../data/full_data.csv')
+
+        print(f'Successfully downloaded data to {os.path.abspath('../data')}')
     else:
         raise Exception('Please input P or D.')
